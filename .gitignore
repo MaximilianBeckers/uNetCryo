@@ -1,0 +1,28 @@
+# Compiled python modules
+*.py[co]
+
+# OS files
+.DS_Store
+
+#any images and em maps
+*.png
+*.jpg
+*.mrc
+*.map
+
+#any trained network
+*.hdf5
+
+#any csv
+*.csv
+
+# Distribution artifacts
+/build/
+/dist/
+/*.egg-info
+
+# IDE files
+.project
+.pydevproject
+.settings/
+.idea/
