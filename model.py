@@ -20,7 +20,7 @@ def uNet(pretrained_weights = None, input_size = (None, None, None, 1)):
 #---------------
     pool4 = keras.layers.MaxPooling3D(pool_size=(2, 2, 2))(conv4)
 
-    conv5 = keras.layers.Conv3D(1024, 3, activation = 'relu', padding = 'same', kernel_initializer = 'he_normal')(keras.layers.pool4)
+    conv5 = keras.layers.Conv3D(1024, 3, activation = 'relu', padding = 'same', kernel_initializer = 'he_normal')(pool4)
     conv5 = keras.layers.Conv3D(1024, 3, activation = 'relu', padding = 'same', kernel_initializer = 'he_normal')(conv5)
     #drop5 = Dropout(0.5)(conv5)
 
